@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }} message text-light">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}<br>
+    <body class="bg-dark">
+        <form method="POST" class="container">
+            <section class="vh-100">
+                <div class="container py-5 h-500">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                            <div class="card shadow-2-strong bg-secondary" style="border-radius: 1rem;">
+                                <div class="card-body p-5 text-center">
+                                    <h3 class="mb-5">Страница регистрации</h3>
+                                    {{ form.hidden_tag() }}
+                                    <div class="form-group">
+                                        Логин: {{ form.username(class="form-control bg-dark text-light") }}
+                                    </div>
+                                    <div class="form-group">
+                                        Пароль: {{ form.password(class="form-control bg-dark text-light") }}
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="captcha">Введите число <b>{{ num }}:</b></label>
+                                        {{ form.captcha(class="form-control bg-dark text-light") }}
+                                    </div><br>
+                                        {{ form.submit(class="btn btn-dark btn-block") }}
+                                    <br><br>
+                                    <p>У вас уже есть учетная запись? <a href="{{ url_for('login') }}">Войти</a></p>
+                                    <p>Вернуться на главную страницу <a href="/">Главная</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+        
+    </body>
+{% endblock %}

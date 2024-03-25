@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body class="bg-dark">
+    <div class="container ">
+        <br>
+        <h2><a href="/">Главная страница</a></h2><br>
+        <h4><a href="#">Здесь вы можете рассказать свою историю</a></h4><br>
+        <form method="POST" action="" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name"><a href="#">Тема:</a></label>
+                <input type="text" class="form-control bg-dark text-light" name="name" id="name" maxlength="250" required>
+            </div><br>
+            <div class="form-group">
+                <label for="description"><a href="#">История</a>:</label>
+                <textarea type="text" class="form-control bg-dark text-light" name="description" id="description" rows="10" cols="50" placeholder="Введите текст..."></textarea>
+            </div><br>
+            <div class="form-group">
+                <input type="submit" class="btn btn-success" value="Добавить">
+            </div>
+        </form>
+    </div>
+</body>
+
+{% endblock %}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Жизнь без онанизма</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="{{ url_for('static', filename ='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename ='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename ='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename ='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename ='vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename ='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename ='css/style.css') }}" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul class="flashes">
+            {% for category, message in messages %}
+                <li class="{{ category }} message">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+  {% endwith %}<br>
+  <header id="header">
+    <div class="container">
+      <h1><a href="/">Жизнь без онанизма</a></h1>
+      <h2>О пользе воздержания<span> <a href="/add_document">Рассказать свою историю</a>&nbsp;</span>Более <b>{{users}}</b> пользователей.</h2>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Главная</a></li>
+          <li><a class="nav-link" href="#about">Истории</a></li>
+          <li><a class="nav-link" href="#resume">Оглавление Ж.Б.О</a></li>
+        {% if not current_user.is_authenticated %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Войти или зарегистрироваться
+            </a>
+            <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdownMenuLink">
+              <a class="nav-link" href="/login">&nbsp;Войти</a>
+              <a class="nav-link" href="/register">&nbsp;Регистрация</a>
+            </div>
+          </li>
+        {% else %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ current_user.username }}
+            </a>
+            <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdownMenuLink">
+              {% if current_user.username == "admin"%}
+                <a class="nav-link" href="/admin">&nbsp;{{ current_user.username }}</a>
+              {% else %}
+                
+              {% endif %}
+                <a class="nav-link" href="/profile">&nbsp;Профиль</a>
+                <a class="nav-link" href="/add_document">&nbsp;Рассказать историю</a>
+                <a class="nav-link" href="{{url_for('logout')}}">&nbsp;Выход</a>
+            </div>
+          </li>
+        {% endif %}
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- <div class="social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div> -->
+
+    </div>
+  </header>
+
+  <section id="about" class="about">
+
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>Посты пользователей</h2>
+        <p>Здесь люди рассказывают свои истории</p>
+      </div>
+    <div class="testimonials container">
+      <div class="section-title">
+        <h2><a href="/add_document">Рассказать тоже</a></h2>
+      </div>
+      {% for document in documents %}
+      <!-- class="testimonials-slider swiper -->
+        <div class="swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <hr>
+                <p>
+                  <b>{{ document.name }}</b><br>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  {{ document.description }}
+                  <i class="bx bxs-quote-alt-right quote-icon-right">&nbsp;&nbsp;{{ document.user.username }}</i>
+                  <p>{{document.created_at.strftime('Дата: %Y-%m-%d' )}}</p>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      {% endfor %}
+      <div class="owl-carousel testimonials-carousel">
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Оглавление Ж.Б.О 5.0</h2>
+        <p>Как избавить от порно и онанизма</p>
+        <a href="http://www.zhizn-bez-onanizma.ru/">Источник этой информации ЖБО 6.0</a>
+      </div>
+
+      <div class="row">
+        <div>
+          <h3 class="resume-title">Добрый день, дорогие читатели и посетители.</h3>
+          <div class="resume-item pb-0">
+            <h4>Начало</h4>
+            <p><em>Начнём, пожалуй, с нуля писать нашу ЖБО 6.0.
+              В этот раз я решил не совершать никаких полумер, и начал писать его с нуля.
+              Первая версия редактировалась с 2012, и пришло время ей уйти на покой.</em></p>
+            <p><em>Итак, с чего начнём?
+              Что автор негодяй, чёрт, придурок – полностью с вами согласен и принимаю это полностью.
+              Но, всё же начнём с куда более прозаических вещей, а именно, задумаемся о том, почему кому-то вообще может прийти в голову идея говорить об онанизме?
+              Хороший и любопытный вопрос, тем более, что я сам его себе задал. Дело в том, что по сути вопрос онанизма не стоял как таковой до 2000 года вообще. Можно сказать, в 2000 году люди ждали конца света, но получили бурю в стакане в виде онанизма. И сегодня мы подробно поговорим о том, что же такого случилось в районе 2000 года и почему именно эта дата создала онанизм как явление.</em></p>
+            <p><em>2000-ый год, как много в этом слове, сколько надежд, сколько мечт.
+              Но нас интересует лишь то, что на рубеже этого года стал возможным массовый доступ к порнографии.
+              Если раньше тебе хотелось заняться онанизмом, то ты искал за диваном спрятанную кассету VHS (олды тут удовлетворённо хмыкнули), смотренную пересмотренную сто раз, или столь же затёртую пачку журналов.
+              Однако, где-то на рубеже 2000-ых мы получили такую волшебную вещь, как персональные ПК с просто божественными возможностями.
+              Помню сам, как раздобыл какую-то невероятную коллекцию порнографических картинок у учителя информатики, это был натуральный рай после примитивных журналов. Прошло ещё три хлопка и три притопа, и году так в 2003-2005 наступила и новая эпоха, когда мы через шшшпппииииух начали выходить на просторы сети по диалапу. Ах, это божественная скорость в 48 Кбайт, как летал тогда интернет, особенно когда в деревне поставили цифровую телефонную станцию. Два первых запроса, как только любопытствующие в виде родителей "а шо такое этот ваш интернет" разошлись – это порно и гей-порно. И если второе нужно было чтобы раз и навсегда закрыть это страницу для себя, то первое было слишком хорошо и интересно, чтобы перестать гуглить это.</em></p>
+            <p><em>Таким образом, плюс минус в 2000-ых годах впервые родилось то, что я бы назвал современным онанизмом, и то, с чем люди пока не знают что делать, как делать, и как взаимно существовать.
+              Проведя мини-исследование длиной более десяти лет, начиная с 2012 года, я в итоге собрал более менее цельное, и надеюсь нескучное о том, как сохранить качество жизни на высоком уровне, несмотря на то, что появляются новые вызовы, которые, мы, разумеется, порвём как Тузик грелку.</em></p>
+            <p><em>Главы моего рассуждения будут постепенно появляться здесь, пока я не расскажу всё, что знаю. Лишнего постараюсь не говорить, но и быть преступно кратким не намерен. Торопитесь делать добрые дела, завтра может уже быть слишком поздно.</em></p>
+          </div><br><hr>
+        </div>
+        {% for jbo in jbos %}
+          <div>
+            <h3 class="resume-title">{{ jbo.name }}</h3>
+            <div class="resume-item pb-0">
+              <h4>{{ jbo.number }}</h4>
+              <p><em>{{ jbo.description }}</em></p>
+            </div><br><hr>
+          </div>
+        {% endfor %}
+      </div>
+  </section>
+  <div class="credits">
+    <a href="{{url_for('send_message')}}">О проекте</a>
+  </div>
+
+
+  <script src="{{ url_for('static', filename ='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename ='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename ='vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename ='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename ='vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename ='assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ url_for('static', filename ='vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename ='js/main.js') }}"></script>
+</body>
+</html>

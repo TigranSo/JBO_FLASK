@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body class="bg-dark text-light">
+    <section id="about" class="about">
+
+        <div class="about-me container">
+
+        <div class="section-title">
+            <h2>Мои истории</h2>
+            <p><a href="/"> Вернуться на главную страницу  </a></p>
+        </div>
+        <div class="testimonials container">
+        <div class="section-title">
+            <h2><a href="/add_document">Поделиться истории</a></h2>
+        </div>
+        {% for document in documents %}
+        <div class="swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div>
+                        <hr>
+                        <p>
+                            <b>{{ document.name }}</b><br>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            {{ document.description }}
+                            <i class="bx bxs-quote-alt-right quote-icon-right">&nbsp;&nbsp;{{ document.user.username }}</i>
+                            <p>{{ document.created_at.strftime('Дата: %Y-%m-%d' )}}</p>
+                        </p>
+                        {% if document.user == current_user %}
+                        <form action="{{ url_for('delete_document', document_id=document.id) }}" method="post">
+                            <input type="submit" value="Удалить">
+                        </form>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        {% endfor %}
+        <div class="owl-carousel testimonials-carousel">
+        </div>
+        </div>
+    </section>
+</body>
+  {% endblock %}

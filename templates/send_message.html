@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <br><br>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="">
+            <div class="card shadow-2-strong bg-secondary" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+                <h3 class="mb-5">Важно отметить, что для меня безопасность пользователей является приоритетом. Поэтому использовал самые современные технологии для защиты ваших данных..</h3>
+                <p><h4>Я всегда стремлюсь улучшать сайт и делать его более удобным и полезным для пользователей. Пожалуйста, оставьте свои комментарии и пожелания по работе сайта, чтобы я мог учесть их при дальнейшей работе. Я готов выслушать любое ваше предложение и принять меры для улучшения сайта. Благодарю каждого за вашу помощь в развитии моего сайта</h4></p>
+            </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="">
+            <div class="card shadow-2-strong bg-secondary" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+                <h3 class="mb-5">Жизнь без онанизма и порнографии – это решение, которое приносит множество благоприятных изменений. Отказ от этих привычек открывает двери к более осознанной, эмоционально богатой и связанной жизни.</h3>
+                <p><h4>Отказ от онанизма и порнографии возвращает контроль над собой и укрепляет духовную связь с собственным телом. Это не просто отказ от ненужной привычки, но и возможность увидеть мир в новых красках. Ощущение свободы, которое приходит с освобождением от зависимости от порнографии, позволяет углубиться в реальные чувства и эмоции, переживать их полностью.</h4></p>
+                <p><h4>Решение проживать жизнь без онанизма открывает новые горизонты для развития личности. Оно способствует улучшению отношений с окружающими, так как помогает обрести более глубокую и близкую связь с партнером. Также это позволяет улучшить концентрацию, усилить энергию и стимулирует к творчеству и саморазвитию..</h4></p>
+                <p><h4>Выбор пути жизни без онанизма и порнографии – это решение, которое дарит не только физическое благополучие, но и душевное удовлетворение. Это шаг к пониманию себя, к раскрытию новых сторон личности и к обретению гармонии внутри и вокруг себя.</h4></p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <body class="bg-dark">
+        <form method="POST" class="container">
+            <section class="vh-100 ">
+                <div class="container py-5 h-500">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card shadow-2-strong bg-secondary" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+                        <h3 class="mb-5">Оставьте свои комментарии и пожелания.</h3>
+                        <div class="form-group ">
+                            <input type="text" class="input-control form-control" required placeholder="{{current_user.username}}" readonly value="{{current_user.username}}" name="username" data-name="name" />
+                        </div><br>
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="email" placeholder="Ваша почта" value="tikoapotrt78@gmail.com" required >
+                        </div><br>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Ваше сообщение" rows="8" cols="33" name="message"></textarea>
+                        </div><br>
+                        <button class="btn btn-dark btn-block" type="submit">Отправить</button><br><br>
+                        <p>Вернуться на главную страницу  <a href="/"> Главная</a></p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </form>
+    </body>
+
+
+{% endblock %}

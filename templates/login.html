@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <body class="bg-dark">
+        <form method="POST" class="container">
+            <section class="vh-100 ">
+                <div class="container py-5 h-500">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card shadow-2-strong bg-secondary" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+                        <h3 class="mb-5">Страница входа</h3>
+                        {{ form.hidden_tag() }}
+                        <div class="form-group ">
+                            <!-- {{ form.username.label(class="form-label") }} -->
+                            Логин:
+                            {{ form.username(class="form-control bg-dark text-light") }}
+                        </div>
+                        <div class="form-group">
+                            <!-- {{ form.password.label(class="form-label") }} -->
+                            Пароль:
+                            {{ form.password(class="form-control bg-dark text-light") }}
+                        </div><br>
+                        {{ form.submit(class="btn btn-dark btn-block") }}<br><br>
+                        <p>У вас нет учетной записи?  <a href="{{ url_for('register') }}"> Зарегистрироваться </a></p>
+                        <p>Вернуться на главную страницу  <a href="/"> Главная</a></p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </form>
+    </body>
+{% endblock %}

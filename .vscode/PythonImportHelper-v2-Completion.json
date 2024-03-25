@@ -1,0 +1,681 @@
+[
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "flash",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "UserMixin",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "LoginManager",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "logout_user",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "current_user",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "FlaskForm",
+        "importPath": "flask_wtf",
+        "description": "flask_wtf",
+        "isExtraImport": true,
+        "detail": "flask_wtf",
+        "documentation": {}
+    },
+    {
+        "label": "FlaskForm",
+        "importPath": "flask_wtf",
+        "description": "flask_wtf",
+        "isExtraImport": true,
+        "detail": "flask_wtf",
+        "documentation": {}
+    },
+    {
+        "label": "FlaskForm",
+        "importPath": "flask_wtf",
+        "description": "flask_wtf",
+        "isExtraImport": true,
+        "detail": "flask_wtf",
+        "documentation": {}
+    },
+    {
+        "label": "StringField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "SubmitField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "IntegerField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "SubmitField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "validators",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "SelectField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "StringField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "InputRequired",
+        "importPath": "wtforms.validators",
+        "description": "wtforms.validators",
+        "isExtraImport": true,
+        "detail": "wtforms.validators",
+        "documentation": {}
+    },
+    {
+        "label": "Length",
+        "importPath": "wtforms.validators",
+        "description": "wtforms.validators",
+        "isExtraImport": true,
+        "detail": "wtforms.validators",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "wtforms.validators",
+        "description": "wtforms.validators",
+        "isExtraImport": true,
+        "detail": "wtforms.validators",
+        "documentation": {}
+    },
+    {
+        "label": "InputRequired",
+        "importPath": "wtforms.validators",
+        "description": "wtforms.validators",
+        "isExtraImport": true,
+        "detail": "wtforms.validators",
+        "documentation": {}
+    },
+    {
+        "label": "InputRequired",
+        "importPath": "wtforms.validators",
+        "description": "wtforms.validators",
+        "isExtraImport": true,
+        "detail": "wtforms.validators",
+        "documentation": {}
+    },
+    {
+        "label": "Bcrypt",
+        "importPath": "flask_bcrypt",
+        "description": "flask_bcrypt",
+        "isExtraImport": true,
+        "detail": "flask_bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "Migrate",
+        "importPath": "flask_migrate",
+        "description": "flask_migrate",
+        "isExtraImport": true,
+        "detail": "flask_migrate",
+        "documentation": {}
+    },
+    {
+        "label": "Admin",
+        "importPath": "flask_admin",
+        "description": "flask_admin",
+        "isExtraImport": true,
+        "detail": "flask_admin",
+        "documentation": {}
+    },
+    {
+        "label": "expose",
+        "importPath": "flask_admin",
+        "description": "flask_admin",
+        "isExtraImport": true,
+        "detail": "flask_admin",
+        "documentation": {}
+    },
+    {
+        "label": "ModelView",
+        "importPath": "flask_admin.contrib.sqla",
+        "description": "flask_admin.contrib.sqla",
+        "isExtraImport": true,
+        "detail": "flask_admin.contrib.sqla",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "secure_filename",
+        "importPath": "werkzeug.utils",
+        "description": "werkzeug.utils",
+        "isExtraImport": true,
+        "detail": "werkzeug.utils",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Select2Widget",
+        "importPath": "flask_admin.form",
+        "description": "flask_admin.form",
+        "isExtraImport": true,
+        "detail": "flask_admin.form",
+        "documentation": {}
+    },
+    {
+        "label": "Fernet",
+        "importPath": "cryptography.fernet",
+        "description": "cryptography.fernet",
+        "isExtraImport": true,
+        "detail": "cryptography.fernet",
+        "documentation": {}
+    },
+    {
+        "label": "Mail",
+        "importPath": "flask_mail",
+        "description": "flask_mail",
+        "isExtraImport": true,
+        "detail": "flask_mail",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "flask_mail",
+        "description": "flask_mail",
+        "isExtraImport": true,
+        "detail": "flask_mail",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "AdminView",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class AdminView(ModelView):\n    def is_accessible(self):\n        return current_user.is_authenticated and current_user.is_admin()\n    def inaccessible_callback(self, name, **kwargs):\n        return redirect(url_for('login'))\n    form_extra_fields = {\n        'role': SelectField(\n            'Role',\n            choices=[\n                ('admin', 'Admin'), ",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "Registerform",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class Registerform(FlaskForm):\n    \"\"\"Регистрация пользоватля \"\"\"\n    username = StringField(validators=[InputRequired(), Length(min=4, max=20)], render_kw={\"placeholder\": \"Имя\"})\n    password = PasswordField(validators=[InputRequired(), Length(min=8, max=20)], render_kw={\"placeholder\": \"Пароль\"})\n    captcha = StringField('Введите число', validators=[InputRequired(message=\"Это поле обязательно для заполнения\")])\n    submit = SubmitField('Зарегистрироваться')\n    def validate_username(self,username):\n        existing_user_username = User.query.filter_by(username=username.data).first()\n        if existing_user_username:\n            flash('Это имя пользователя уже существует. Пожалуйста, выберите другой вариант.', 'error')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "Loginform",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class Loginform(FlaskForm):\n\t\"\"\"Вход пользователя \"\"\"\n\tusername = StringField(validators=[InputRequired(), Length(min=4, max=20)], render_kw={\"placeholder\": \"Имя\"})\n\tpassword = PasswordField(validators=[InputRequired(), Length(min=8, max=20)], render_kw={\"placeholder\": \"Пароль\"})\n\tsubmit = SubmitField('Войти')\n#Модели --------------------------------------------\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    role = db.Column(db.String(20), nullable=True) \n    username = db.Column(db.String(30), nullable=False, unique=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    role = db.Column(db.String(20), nullable=True) \n    username = db.Column(db.String(30), nullable=False, unique=True)\n    password = db.Column(db.String(80), nullable=False)\n    documents = db.relationship('Document', back_populates='user')\n    def is_admin(self):\n        return self.role == 'admin'\nclass Document(db.Model):\n    id = db.Column(db.Integer, primary_key=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class Document(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    _name = db.Column('name', db.String(255), nullable=False)\n    _description = db.Column('description', db.Text())\n    created_at = db.Column(db.DateTime, default=datetime.utcnow)\n    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))\n    user = db.relationship('User', back_populates='documents')\n    @property\n    def name(self):\n        if isinstance(self._name, bytes):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "Jbo",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class Jbo(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column('name', db.String(255), nullable=False)\n    number = db.Column('number', db.String(55), nullable=False)\n    description = db.Column('description', db.Text())\n#Добавим модели в админ\nadmin.add_view(AdminView(User, db.session))\nadmin.add_view(AdminView(Document, db.session))\nadmin.add_view(AdminView(Jbo, db.session))\n#Страницы templates-------------------------------------------------",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "load_user",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def load_user(user_id):\n    return User.query.get(int(user_id))\n#Генерация кода для зашифирования инвормации на базе\n# key = Fernet.generate_key()\nkey = b'Y_oV0MwHgA6dlTW2rb-ZryyPZpbJ9hT5KOsT1C4M6u0='\nfernet = Fernet(key)\nclass AdminView(ModelView):\n    def is_accessible(self):\n        return current_user.is_authenticated and current_user.is_admin()\n    def inaccessible_callback(self, name, **kwargs):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def login():\n    form = Loginform()\n    if form.validate_on_submit():\n        user = User.query.filter_by(username=form.username.data).first()\n        if user and bcrypt.check_password_hash(user.password, form.password.data):\n            login_user(user)\n            return redirect(url_for('index'))\n        else:\n            return render_template('login.html', form=form)\n    return render_template('login.html', form=form)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def logout():\n\tlogout_user()\n\treturn redirect(url_for('index'))\n@app.route('/register', methods=['GET', 'POST'])\ndef register():\n    form = Registerform()\n    if request.method == 'GET':\n        num = random.randint(1000, 9999)\n        session['captcha'] = str(num)\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def register():\n    form = Registerform()\n    if request.method == 'GET':\n        num = random.randint(1000, 9999)\n        session['captcha'] = str(num)\n    else:\n        num = session.get('captcha')\n    if form.validate_on_submit():\n        if form.captcha.data != session.get('captcha'):\n            flash('Неправильная капча. Попробуйте еще раз.', 'error')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def index():\n    users = User.query.count()\n    jbos = Jbo.query.all()\n    documents = Document.query.order_by(Document.created_at.desc()).all()\n     # Расшифровка данных\n    decrypted_documents = []\n    for doc in documents:\n        decrypted_doc = {\n            'id': doc.id,\n            'name': doc.name,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "add_document",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def add_document():\n    if request.method == 'POST':\n        name = request.form.get('name')\n        description = request.form.get('description')\n        if name:\n            new_document = Document(name=name, description=description, user=current_user, created_at=datetime.utcnow())\n            # базу данных\n            db.session.add(new_document)\n            db.session.commit()\n            flash('Ваша история опубликована!', 'success')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "send_message",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def send_message():\n    user = current_user.username\n    if request.method == \"POST\":\n        username = request.form['username']\n        email = request.form[\"email\"]\n        msg = request.form['message']\n        message = Message(username, sender= \"tikoapotrt78@gmail.com\", recipients=[email])\n        message.body = (\"Имя, \" + user + \" \" + \"\\nКомментарий: \" + msg)\n        mail.send(message)\n        flash('Отправлено.', 'error')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "profile",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def profile():\n    documents = Document.query.filter_by(user=current_user).order_by(Document.created_at.desc()).all()\n     # Расшифровка данных\n    decrypted_documents = []\n    for doc in documents:\n        decrypted_doc = {\n            'id': doc.id,\n            'name': doc.name,\n            'description': doc.description,\n            'created_at': doc.created_at,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "delete_document",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def delete_document(document_id):\n    document = Document.query.get_or_404(document_id)\n    if document.user != current_user:\n        return redirect(url_for('profile'))\n    db.session.delete(document)\n    db.session.commit()\n    return redirect(url_for('profile'))\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__, template_folder='templates')\napp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///base.db'\napp.config['SECRET_KEY'] = 'tvvievf87ydvkoy'\ndb = SQLAlchemy(app)\nadmin = Admin(app, template_mode='bootstrap4', name='JBO')\nmigrate = Migrate(app, db)\nbcrypt = Bcrypt(app)\nadmin._menu = admin._menu[1:]\napp.config[\"MAIL_SERVER\"] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SQLALCHEMY_DATABASE_URI']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///base.db'\napp.config['SECRET_KEY'] = 'tvvievf87ydvkoy'\ndb = SQLAlchemy(app)\nadmin = Admin(app, template_mode='bootstrap4', name='JBO')\nmigrate = Migrate(app, db)\nbcrypt = Bcrypt(app)\nadmin._menu = admin._menu[1:]\napp.config[\"MAIL_SERVER\"] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config[\"MAIL_USERNAME\"] = \"tikoapotrt78@gmail.com\"",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SECRET_KEY']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['SECRET_KEY'] = 'tvvievf87ydvkoy'\ndb = SQLAlchemy(app)\nadmin = Admin(app, template_mode='bootstrap4', name='JBO')\nmigrate = Migrate(app, db)\nbcrypt = Bcrypt(app)\nadmin._menu = admin._menu[1:]\napp.config[\"MAIL_SERVER\"] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config[\"MAIL_USERNAME\"] = \"tikoapotrt78@gmail.com\"\napp.config['MAIL_PASSWORD'] = \"ttxtachgzxubqjno\"",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "db = SQLAlchemy(app)\nadmin = Admin(app, template_mode='bootstrap4', name='JBO')\nmigrate = Migrate(app, db)\nbcrypt = Bcrypt(app)\nadmin._menu = admin._menu[1:]\napp.config[\"MAIL_SERVER\"] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config[\"MAIL_USERNAME\"] = \"tikoapotrt78@gmail.com\"\napp.config['MAIL_PASSWORD'] = \"ttxtachgzxubqjno\"\napp.config['MAIL_USE_TLS'] = False",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "admin = Admin(app, template_mode='bootstrap4', name='JBO')\nmigrate = Migrate(app, db)\nbcrypt = Bcrypt(app)\nadmin._menu = admin._menu[1:]\napp.config[\"MAIL_SERVER\"] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config[\"MAIL_USERNAME\"] = \"tikoapotrt78@gmail.com\"\napp.config['MAIL_PASSWORD'] = \"ttxtachgzxubqjno\"\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "migrate",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "migrate = Migrate(app, db)\nbcrypt = Bcrypt(app)\nadmin._menu = admin._menu[1:]\napp.config[\"MAIL_SERVER\"] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config[\"MAIL_USERNAME\"] = \"tikoapotrt78@gmail.com\"\napp.config['MAIL_PASSWORD'] = \"ttxtachgzxubqjno\"\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "bcrypt",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "bcrypt = Bcrypt(app)\nadmin._menu = admin._menu[1:]\napp.config[\"MAIL_SERVER\"] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config[\"MAIL_USERNAME\"] = \"tikoapotrt78@gmail.com\"\napp.config['MAIL_PASSWORD'] = \"ttxtachgzxubqjno\"\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\n#Для request.user",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "admin._menu",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "admin._menu = admin._menu[1:]\napp.config[\"MAIL_SERVER\"] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config[\"MAIL_USERNAME\"] = \"tikoapotrt78@gmail.com\"\napp.config['MAIL_PASSWORD'] = \"ttxtachgzxubqjno\"\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\n#Для request.user\nlogin_manager = LoginManager()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"MAIL_SERVER\"]",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config[\"MAIL_SERVER\"] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config[\"MAIL_USERNAME\"] = \"tikoapotrt78@gmail.com\"\napp.config['MAIL_PASSWORD'] = \"ttxtachgzxubqjno\"\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\n#Для request.user\nlogin_manager = LoginManager()\nlogin_manager.init_app(app)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['MAIL_PORT']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['MAIL_PORT'] = 465\napp.config[\"MAIL_USERNAME\"] = \"tikoapotrt78@gmail.com\"\napp.config['MAIL_PASSWORD'] = \"ttxtachgzxubqjno\"\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\n#Для request.user\nlogin_manager = LoginManager()\nlogin_manager.init_app(app)\nlogin_manager.login_view = 'login'",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"MAIL_USERNAME\"]",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config[\"MAIL_USERNAME\"] = \"tikoapotrt78@gmail.com\"\napp.config['MAIL_PASSWORD'] = \"ttxtachgzxubqjno\"\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\n#Для request.user\nlogin_manager = LoginManager()\nlogin_manager.init_app(app)\nlogin_manager.login_view = 'login'\n@login_manager.user_loader",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['MAIL_PASSWORD']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['MAIL_PASSWORD'] = \"ttxtachgzxubqjno\"\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\n#Для request.user\nlogin_manager = LoginManager()\nlogin_manager.init_app(app)\nlogin_manager.login_view = 'login'\n@login_manager.user_loader\ndef load_user(user_id):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['MAIL_USE_TLS']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\n#Для request.user\nlogin_manager = LoginManager()\nlogin_manager.init_app(app)\nlogin_manager.login_view = 'login'\n@login_manager.user_loader\ndef load_user(user_id):\n    return User.query.get(int(user_id))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['MAIL_USE_SSL']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\n#Для request.user\nlogin_manager = LoginManager()\nlogin_manager.init_app(app)\nlogin_manager.login_view = 'login'\n@login_manager.user_loader\ndef load_user(user_id):\n    return User.query.get(int(user_id))\n#Генерация кода для зашифирования инвормации на базе",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "mail",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "mail = Mail(app)\n#Для request.user\nlogin_manager = LoginManager()\nlogin_manager.init_app(app)\nlogin_manager.login_view = 'login'\n@login_manager.user_loader\ndef load_user(user_id):\n    return User.query.get(int(user_id))\n#Генерация кода для зашифирования инвормации на базе\n# key = Fernet.generate_key()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "login_manager",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "login_manager = LoginManager()\nlogin_manager.init_app(app)\nlogin_manager.login_view = 'login'\n@login_manager.user_loader\ndef load_user(user_id):\n    return User.query.get(int(user_id))\n#Генерация кода для зашифирования инвормации на базе\n# key = Fernet.generate_key()\nkey = b'Y_oV0MwHgA6dlTW2rb-ZryyPZpbJ9hT5KOsT1C4M6u0='\nfernet = Fernet(key)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "login_manager.login_view",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "login_manager.login_view = 'login'\n@login_manager.user_loader\ndef load_user(user_id):\n    return User.query.get(int(user_id))\n#Генерация кода для зашифирования инвормации на базе\n# key = Fernet.generate_key()\nkey = b'Y_oV0MwHgA6dlTW2rb-ZryyPZpbJ9hT5KOsT1C4M6u0='\nfernet = Fernet(key)\nclass AdminView(ModelView):\n    def is_accessible(self):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "key",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "key = b'Y_oV0MwHgA6dlTW2rb-ZryyPZpbJ9hT5KOsT1C4M6u0='\nfernet = Fernet(key)\nclass AdminView(ModelView):\n    def is_accessible(self):\n        return current_user.is_authenticated and current_user.is_admin()\n    def inaccessible_callback(self, name, **kwargs):\n        return redirect(url_for('login'))\n    form_extra_fields = {\n        'role': SelectField(\n            'Role',",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "fernet",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "fernet = Fernet(key)\nclass AdminView(ModelView):\n    def is_accessible(self):\n        return current_user.is_authenticated and current_user.is_admin()\n    def inaccessible_callback(self, name, **kwargs):\n        return redirect(url_for('login'))\n    form_extra_fields = {\n        'role': SelectField(\n            'Role',\n            choices=[",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "\tusername",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "\tusername = StringField(validators=[InputRequired(), Length(min=4, max=20)], render_kw={\"placeholder\": \"Имя\"})\n\tpassword = PasswordField(validators=[InputRequired(), Length(min=8, max=20)], render_kw={\"placeholder\": \"Пароль\"})\n\tsubmit = SubmitField('Войти')\n#Модели --------------------------------------------\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    role = db.Column(db.String(20), nullable=True) \n    username = db.Column(db.String(30), nullable=False, unique=True)\n    password = db.Column(db.String(80), nullable=False)\n    documents = db.relationship('Document', back_populates='user')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "\tpassword",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "\tpassword = PasswordField(validators=[InputRequired(), Length(min=8, max=20)], render_kw={\"placeholder\": \"Пароль\"})\n\tsubmit = SubmitField('Войти')\n#Модели --------------------------------------------\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    role = db.Column(db.String(20), nullable=True) \n    username = db.Column(db.String(30), nullable=False, unique=True)\n    password = db.Column(db.String(80), nullable=False)\n    documents = db.relationship('Document', back_populates='user')\n    def is_admin(self):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "\tsubmit",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "\tsubmit = SubmitField('Войти')\n#Модели --------------------------------------------\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    role = db.Column(db.String(20), nullable=True) \n    username = db.Column(db.String(30), nullable=False, unique=True)\n    password = db.Column(db.String(80), nullable=False)\n    documents = db.relationship('Document', back_populates='user')\n    def is_admin(self):\n        return self.role == 'admin'",
+        "detail": "app",
+        "documentation": {}
+    }
+]
