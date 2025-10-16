@@ -25,7 +25,7 @@ import random
 
 app = Flask(__name__, template_folder='templates')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///base.db'
-app.config['SECRET_KEY'] = 'tvvievf87ydvkoy'
+app.config['SECRET_KEY'] = ''
 db = SQLAlchemy(app)
 admin = Admin(app, template_mode='bootstrap4', name='JBO')
 migrate = Migrate(app, db)
@@ -33,10 +33,10 @@ bcrypt = Bcrypt(app)
 admin._menu = admin._menu[1:]
 
 
-app.config["MAIL_SERVER"] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 465
-app.config["MAIL_USERNAME"] = "tikoapotrt78@gmail.com"
-app.config['MAIL_PASSWORD'] = "ttxtachgzxubqjno"
+app.config["MAIL_SERVER"] = ''
+app.config['MAIL_PORT'] = 
+app.config["MAIL_USERNAME"] = ""
+app.config['MAIL_PASSWORD'] = ""
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
@@ -55,7 +55,7 @@ def load_user(user_id):
 
 #Генерация кода для зашифирования инвормации на базе
 # key = Fernet.generate_key()
-key = b'Y_oV0MwHgA6dlTW2rb-ZryyPZpbJ9hT5KOsT1C4M6u0='
+key = b''
 fernet = Fernet(key)
 
 
@@ -320,3 +320,4 @@ def delete_document(document_id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
